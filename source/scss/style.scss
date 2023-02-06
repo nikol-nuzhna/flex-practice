@@ -1,0 +1,256 @@
+// Обнуление
+@import "_nullstyle";
+
+body {
+    font-size: 16px;
+    line-height: 150%; /* 24/16 */
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+.page {
+    flex: 1 1 auto;
+}
+
+.main-block {
+    background-color: #445162;
+    padding: 50px 0;
+    
+    &__flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__flex-element {
+        color: #ffffff;
+        text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.3);
+        padding-right: 30px;
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 38px;
+    }
+
+    &__list {
+        
+        li {
+            font-size: 20px;
+            line-height: 180%; /* 36/20 */
+            padding-left: 35px;
+            background: url(../img/main-block/check.png) 0 5px no-repeat;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__picture {}
+}
+
+.title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+}
+
+.what-is {
+    padding: 50px 0;
+
+    &__flex-container {
+        display: flex;
+    }
+
+    &__picture {
+        flex: 0 0 430px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__flex-element--2 {
+        flex: 1 1 auto;
+        padding-left: 40px;
+    }
+    
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        & p:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.columns {
+    background-color: #f5f5f5;
+    padding: 50px 0 20px 0;
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    // row, column
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+
+    &__card-envelope {
+        flex: 0 1 50%;
+        padding: 0 8px;
+
+    }
+
+    .card {
+        display: flex;
+        margin: 0 0 30px 0;
+
+        &__picture {
+            flex: 0 0 200px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__text {
+            flex: 1 1 auto;
+            margin-left: 15px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 30px;
+            color: #445161;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.vertical-align {
+    padding: 50px 0;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 33px;
+    }
+
+    &__cards-envelope--limit-width {
+        max-width: 990px;
+        margin: 0 auto;
+    }
+    
+    &__cards {
+        display: flex;
+        margin: 0 -22.5px;
+    }
+
+    &__cards-envelope--for-gap {
+        padding: 0 22.5px;
+        flex: 0 1 33.333%;
+        display: flex;
+    }
+
+    .cards-envelope--1 {
+        order: 3;
+        align-self: flex-end;
+    }
+    .cards-envelope--2 {
+        order: 2;
+    }
+    .cards-envelope--3 {
+        order: 1;
+        align-self: flex-start;
+    }
+    
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: #445162;
+        border: 2px solid #445162;
+        border-radius: 5px;
+        color: #fff;
+    }
+    
+    .card {
+        padding-bottom: 20px;
+
+        &__pretitle {
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            padding: 17px 15px;
+        }
+        
+        &__title {
+            background-color: #fff;
+            font-size: 40px;
+            line-height: 30px;
+            color: #445162;
+            text-align: center;
+            padding: 25px 15px;
+        }
+        
+        &__text {
+            flex: 1 1 auto;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 20px;
+            p:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+        
+        &__button {
+            display: block;
+            background-color: #fff;
+            font-size: 18px;
+            line-height: 18px;
+            color: #445161;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 20px;
+            padding: 13px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.footer {
+    background-color: #f5f5f5;
+    
+    &__container {}
+    
+    &__flex-container {
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__flex-element {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: #445162;
+    }
+}
