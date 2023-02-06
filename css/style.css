@@ -190,15 +190,14 @@ body {
   display: flex;
 }
 .vertical-align .cards-envelope--1 {
-  order: 3;
+  order: 2;
   align-self: flex-end;
 }
 .vertical-align .cards-envelope--2 {
-  order: 2;
+  order: 3;
 }
 .vertical-align .cards-envelope--3 {
   order: 1;
-  align-self: flex-start;
 }
 .vertical-align__card {
   display: flex;
